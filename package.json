@@ -1,0 +1,1 @@
+{"name":"@claimwindow/sdk-adapter","version":"0.1.0","type":"module","scripts":{"test":"node --test","pilot":"node pilot.js"},"dependencies":{"@stellar/stellar-sdk":"17.4.0"},"license":"MIT"}

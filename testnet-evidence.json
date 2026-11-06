@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "account": "GAUA6YRL7KQPEW2XUJPZLMCYLPBOQJGLQCSIBGOWSRC64ZBOHF7Y27HA",
+  "balanceId": "000000006df567edd073467eb4d31ff58aadb183d32ee83c456349c0b6d77bd8634305b3",
+  "created": "38f08b80c82604b785a1100f1c22ce2ad4dbbd293893dd43c5eaa1b054cb9e72",
+  "claimed": "b1a8413a0d66ebe6d2d1fd6bd05f34babbb86184d86144f9203966f49dd0d08d",
+  "claimants": [
+    {
+      "destination": "GAUA6YRL7KQPEW2XUJPZLMCYLPBOQJGLQCSIBGOWSRC64ZBOHF7Y27HA",
+      "predicate": {
+        "unconditional": true
+      }
+    }
+  ],
+  "removed": true,
+  "recordedAt": "2026-11-06T14:02:57.844Z",
+  "scope": "Unconditional native-XLM create-and-claim flow only; time-boundary behavior covered locally."
+}

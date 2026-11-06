@@ -1,0 +1,3 @@
+import test from'node:test';import assert from'node:assert/strict';import{toSdk,createBalance}from'./index.js';import{Keypair,Operation,xdr}from'@stellar/stellar-sdk';
+test('SDK XDR preserves strict before boundary',()=>{const p=toSdk({not:{abs_before:'100'}});assert.equal(p.type,'claimPredicateNot');assert.equal(p.notPredicate.absBefore.toString(),'100')});
+test('native balance operation round trip',()=>{const destination=Keypair.random().publicKey();const op=createBalance({amount:'1',claimants:[{destination,predicate:{unconditional:true}}]});const decoded=Operation.fromXDRObject(xdr.Operation.fromXDR(op.toXDR()));assert.equal(decoded.type,'createClaimableBalance');assert.equal(decoded.claimants[0].destination,destination);assert.equal(decoded.amount,'1.0000000')});
